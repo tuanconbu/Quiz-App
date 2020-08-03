@@ -1,15 +1,15 @@
 let quiz_data = [
     {
         id: 1,
-        quiz: "Who is pro ?",
-        answers: ["hieu", "hieu1", "hieu2"],
-        rightAnswer: "hieu"
+        quiz: "Who is stupid ?",
+        answers: ["Kien", "Nigga", "Tien Van"],
+        rightAnswer: "Kien"
     },
     {
         id: 2,
         quiz: "Who is pro 2?",
-        answers: ["hieu", "hieu1", "hieu2"],
-        rightAnswer: "hieu2"
+        answers: ["hieu", "hieu", "hieu"],
+        rightAnswer: "hieu"
     },
     {
         id: "099099",
