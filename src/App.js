@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import TopNav from './components/TopNav'
+import Quiz from './components/Quiz'
+import { Layout, Button } from 'antd';
+
+
+const { Header, Content } = Layout;
 
 function App() {
+  const [start, setStart] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout>
+        <Header className="header"><TopNav /></Header>
+        {!start
+          ? <Button className="get-started-button" onClick={() => setStart(true)}> Get Started</Button>
+          : <Content className="content"> <Quiz /></Content>}
+      </Layout>
     </div>
   );
 }
